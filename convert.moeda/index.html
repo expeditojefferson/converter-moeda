@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de moeda</title>
+</head>
+<body>
+    <header>
+        <h1>CONVERSÃO DE MOEDA COM API</h1>
+    </header>
+    <main>
+        <section class="main">
+            <div class="dados">
+                <div class="quantia">
+                    <label for="quantia">
+                        <p class="p-tamanho">Quantia</p>
+                        <input type="number" id="quantia" name="quantia" class="todos">
+                    </label>
+                </div>
+
+                <div class="of">
+                    <label for="de">
+                        <p class="p-tamanho">De</p>
+                        <select name="de" id="de" class="todos">
+                            <option value="0" class="op1">BRL</option>
+                            <option value="1" class="op1">USD</option>
+                            <option value="2" class="op1">EURO</option>
+                            <option value="3" class="op1">BTICOIN</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="to">
+                    <label for="to">
+                        <p class="p-tamanho">para</p>
+                        <select name="para" id="para" class="todos">
+                            <option value="4" class="op2">USD</option>
+                            <option value="5" class="op2">EURO</option>
+                            <option value="6" class="op2">BRL</option>
+                            <option value="7" class="op2">BTICOIN</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+
+            <div class="resultado">
+                <div class="resul-p">000000</div>
+                <input type="button" value="Converter" class="result-btn" onclick="clicou()"></input>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
